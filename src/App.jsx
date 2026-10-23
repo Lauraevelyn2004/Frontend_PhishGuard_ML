@@ -7,9 +7,8 @@ function App() {
   const [carregando, setCarregando] = useState(false);
   const [erro, setErro] = useState('');
 
-  // URL ATUALIZADO PARA O BACKEND NO AZURE
-  // (Foi removido o link antigo do Render / localhost)
-  const API_URL = import.meta.env.VITE_API_URL || 'https://backendphishguardml.azurewebsites.net/predict';
+  // URL corrigida para apontar para o seu Web App no Azure
+  const API_URL = import.meta.env.VITE_API_URL || 'https://irisflaskml.azurewebsites.net/predict';
 
   const analisarUrl = async (e) => {
     e.preventDefault();
