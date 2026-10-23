@@ -7,8 +7,8 @@ function App() {
   const [carregando, setCarregando] = useState(false);
   const [erro, setErro] = useState('');
 
-  // URL corrigida para apontar para o seu Web App no Azure
-  const API_URL = import.meta.env.VITE_API_URL || 'https://irisflaskml.azurewebsites.net/predict';
+  // Define a URL da API, usando a variável de ambiente VITE_API_URL se estiver definida, caso contrário, usa o valor padrão.
+  const API_URL = import.meta.env.VITE_API_URL || 'https://irisflaskml-bgc3hecmang2h6g2.northcentralus-01.azurewebsites.net/predict';
 
   const analisarUrl = async (e) => {
     e.preventDefault();
